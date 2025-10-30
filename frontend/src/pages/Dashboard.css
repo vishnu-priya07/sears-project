@@ -1,0 +1,129 @@
+/* Dashboard Container */
+.dashboard-container {
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: #f9f9fb;
+  min-height: 100vh;
+}
+
+/* Title & Subtitle */
+.dashboard-container h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.dashboard-container p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Stats Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #555;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Colors for different cards */
+.stat-card.alert {
+  border-top: 4px solid #ff4d4f;
+}
+.stat-card.resolved {
+  border-top: 4px solid #52c41a;
+}
+.stat-card.ongoing {
+  border-top: 4px solid #faad14;
+}
+.stat-card.users {
+  border-top: 4px solid #1890ff;
+}
+.stat-card.reports {
+  border-top: 4px solid #722ed1;
+}
+
+/* Recent Activity */
+.recent-activity {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.recent-activity h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.recent-activity ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-activity li {
+  background: #f5f7fa;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.recent-activity li:hover {
+  background: #e8f4ff;
+}
+
+/* System Usage Section */
+.system-usage {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.system-usage h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.system-usage p {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.system-usage b {
+  color: #1890ff;
+}

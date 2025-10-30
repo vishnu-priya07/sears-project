@@ -1,0 +1,124 @@
+/* ================================
+   Alerts Page Styles
+================================ */
+.page-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px 10%;
+  background: #f9fafc;
+  min-height: 100vh;
+  color: #2c3e50;
+}
+
+.page-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+.sub-text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+/* ================================
+   Alerts List
+================================ */
+.alerts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Alert Card Base */
+.alert-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 8px solid transparent;
+}
+
+.alert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ================================
+   Type Colors
+================================ */
+.alert-card.fire {
+  border-left-color: #e53935; /* Red */
+}
+
+.alert-card.medical {
+  border-left-color: #2e7d32; /* Green */
+}
+
+.alert-card.accident {
+  border-left-color: #f57c00; /* Orange */
+}
+
+/* ================================
+   Titles & Text
+================================ */
+.alert-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* ================================
+   Severity Tags
+================================ */
+.severity {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Severity Colors */
+.severity.low {
+  background: #388e3c; /* Green */
+}
+
+.severity.medium {
+  background: #fbc02d; /* Yellow */
+  color: #333;
+}
+
+.severity.high {
+  background: #d32f2f; /* Red */
+  animation: pulse 1.5s infinite;
+}
+
+/* ================================
+   Animations
+================================ */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(211, 47, 47, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(211, 47, 47, 0);
+  }
+}

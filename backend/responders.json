@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Fire Department",
+    "contact": "101",
+    "types": ["fire", "burn", "smoke"],
+    "location": { "lat": 16.314, "lon": 80.423 }
+  },
+  {
+    "name": "Police Station",
+    "contact": "100",
+    "types": ["crime", "theft", "accident", "security"],
+    "location": { "lat": 16.320, "lon": 80.420 }
+  },
+  {
+    "name": "Ambulance Service",
+    "contact": "108",
+    "types": ["medical", "injury", "accident"],
+    "location": { "lat": 16.317, "lon": 80.425 }
+  },
+  {
+    "name": "Disaster Management Control Room",
+    "contact": "1070",
+    "types": ["flood", "earthquake", "landslide"],
+    "location": { "lat": 16.310, "lon": 80.430 }
+  },
+  {
+    "name": "Flood Relief Unit",
+    "contact": "1122",
+    "types": ["flood", "waterlogging", "storm"],
+    "location": { "lat": 16.315, "lon": 80.428 }
+  },
+  {
+    "name": "National Earthquake Response Center",
+    "contact": "1800-425-0001",
+    "types": ["earthquake", "structural_damage", "rescue"],
+    "location": { "lat": 16.319, "lon": 80.419 }
+  },
+  {
+    "name": "Campus Security Office",
+    "contact": "944-000-0001",
+    "types": ["security", "threat", "unauthorized_entry"],
+    "location": { "lat": 16.322, "lon": 80.421 }
+  },
+  {
+    "name": "General Emergency Helpline",
+    "contact": "112",
+    "types": ["other", "unspecified", "general"],
+    "location": { "lat": 16.316, "lon": 80.424 }
+  }
+]
