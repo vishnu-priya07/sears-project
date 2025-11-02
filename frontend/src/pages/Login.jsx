@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import API_BASE from "../apiConfig";
 
 import "./Login.css";
@@ -28,7 +28,7 @@ function Login({ setIsLoggedIn }) {
         alert("✅ Login successful!");
         localStorage.setItem("loggedInUser", JSON.stringify(data.user)); // store user session
         setIsLoggedIn(true);
-        navigate("/dashboard");
+        navigate("/");
       } else {
         alert(data.message || "❌ Invalid email or password.");
       }
@@ -61,7 +61,7 @@ function Login({ setIsLoggedIn }) {
         <button type="submit">Login</button>
 
         <p>
-          Don’t have an account? <a href="/signup">Signup here</a>
+          Don’t have an account? <Link to="/signup">Signup Here</Link>
         </p>
       </form>
     </div>
